@@ -1,0 +1,10 @@
+#https://www.hackerrank.com/challenges/python-loops/problem?isFullScreen=true
+
+if __name__ == '__main__':
+    n = int(input())
+    for number in range (n):
+        print(number*number)
+#use for loop, call 'number' and put in a range of n for every input
+#It will print out every single that count up to the input
+#Example: 5, it will print up to 4 and multiply it
+
