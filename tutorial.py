@@ -4,7 +4,7 @@ bucket = aws_resource.Bucket("totaltechnology")
 response = bucket.create(
     ACL='public-read',
     CreateBucketConfiguration={
-        'LocationConstraint':'us-west-1'
+        'LocationConstraint':'us-west-2'
     },
     
 )
