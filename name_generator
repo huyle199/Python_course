@@ -1,0 +1,18 @@
+import random
+import string
+
+dept_name = ['Accounting', 'Cloud', 'HR']
+dept_input = input("What department are you in? ".lower())
+numbers_input = input("How many EC2 instance names do you need?: ")
+numbers_input = int(numbers_input)
+
+if dept_input not in dept_name:
+    print("Please try again!.")
+    exit()
+    
+def create_name(length = 5):
+    name_result = ''.join(random.choice(string.ascii_letters) for i in range(length))
+    return name_result
+
+for ec in range(numbers_input):
+    print'{}_{}'.format(create_name() = 5), dept_name)
