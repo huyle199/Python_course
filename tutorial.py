@@ -1,11 +1,10 @@
 import boto3
 aws_resource = boto3.resource("s3")
 bucket = aws_resource.Bucket("totaltechnology")
-
 response = bucket.create(
-    ACL='public-read'
+    ACL='public-read',
     CreateBucketConfiguration={
-        'LocationConstraint':'us-west-1'|'us-west-2'
+        'LocationConstraint':'us-west-1'
     },
     
 )
